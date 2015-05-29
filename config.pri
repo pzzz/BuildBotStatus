@@ -5,12 +5,15 @@ device {
     CONFIG(debug, debug|release) {
         profile {
             INCLUDEPATH += $$quote(${QNX_TARGET}/usr/include/qt4/QtNetwork) \
+                $$quote(${QNX_TARGET}/usr/include/bb/data) \
                 $$quote(${QNX_TARGET}/usr/include/qt4/QtCore)
 
             DEPENDPATH += $$quote(${QNX_TARGET}/usr/include/qt4/QtNetwork) \
+                $$quote(${QNX_TARGET}/usr/include/bb/data) \
                 $$quote(${QNX_TARGET}/usr/include/qt4/QtCore)
 
             LIBS += -lQtCore \
+                -lbbdata \
                 -lQtNetwork
 
             CONFIG += \
@@ -18,12 +21,15 @@ device {
                 config_pri_source_group1
         } else {
             INCLUDEPATH += $$quote(${QNX_TARGET}/usr/include/qt4/QtNetwork) \
+                $$quote(${QNX_TARGET}/usr/include/bb/data) \
                 $$quote(${QNX_TARGET}/usr/include/qt4/QtCore)
 
             DEPENDPATH += $$quote(${QNX_TARGET}/usr/include/qt4/QtNetwork) \
+                $$quote(${QNX_TARGET}/usr/include/bb/data) \
                 $$quote(${QNX_TARGET}/usr/include/qt4/QtCore)
 
             LIBS += -lQtCore \
+                -lbbdata \
                 -lQtNetwork
 
             CONFIG += \
@@ -36,12 +42,15 @@ device {
     CONFIG(release, debug|release) {
         !profile {
             INCLUDEPATH += $$quote(${QNX_TARGET}/usr/include/qt4/QtNetwork) \
+                $$quote(${QNX_TARGET}/usr/include/bb/data) \
                 $$quote(${QNX_TARGET}/usr/include/qt4/QtCore)
 
             DEPENDPATH += $$quote(${QNX_TARGET}/usr/include/qt4/QtNetwork) \
+                $$quote(${QNX_TARGET}/usr/include/bb/data) \
                 $$quote(${QNX_TARGET}/usr/include/qt4/QtCore)
 
             LIBS += -lQtCore \
+                -lbbdata \
                 -lQtNetwork
 
             CONFIG += \
@@ -55,12 +64,15 @@ simulator {
     CONFIG(debug, debug|release) {
         !profile {
             INCLUDEPATH += $$quote(${QNX_TARGET}/usr/include/qt4/QtNetwork) \
+                $$quote(${QNX_TARGET}/usr/include/bb/data) \
                 $$quote(${QNX_TARGET}/usr/include/qt4/QtCore)
 
             DEPENDPATH += $$quote(${QNX_TARGET}/usr/include/qt4/QtNetwork) \
+                $$quote(${QNX_TARGET}/usr/include/bb/data) \
                 $$quote(${QNX_TARGET}/usr/include/qt4/QtCore)
 
             LIBS += -lQtCore \
+                -lbbdata \
                 -lQtNetwork
 
             CONFIG += \

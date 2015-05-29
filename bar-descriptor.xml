@@ -69,6 +69,14 @@
     <!-- <copyright>(c) 2015 Peter Schuller</copyright> -->
 
     <!--  Name of author which is used for signing. Must match the developer name of your development certificate. -->
+    <icon>
+       <image>AppIcon_144.png</image>
+       <image>AppIcon_114.png</image>
+       <image>AppIcon_110.png</image>
+       <image>AppIcon_96.png</image>
+       <image>AppIcon_90.png</image>
+       <image>AppIcon_86.png</image>
+    </icon>
     <author>Peter Schuller &lt;ps@pzzz.de></author>
 
     <!--  Unique author ID assigned by signing authority. Required if using debug tokens. -->
@@ -80,18 +88,20 @@
     </initialWindow>
 
     <!--  The icon for the application, which should be 114x114. -->
-    <icon>
-        <image>icon.png</image>
-    </icon>
 
-    <asset path="icon.png">icon.png</asset>
-    <asset path="assets">assets</asset>
 
     <!-- Locale support -->
     <asset path="translations" dest="qm">
         <include name="*.qm"/>
     </asset>
-
+    <asset path="AppIcon_144.png">AppIcon_144.png</asset>
+    <asset path="AppIcon_114.png">AppIcon_114.png</asset>
+    <asset path="AppIcon_110.png">AppIcon_110.png</asset>
+    <asset path="AppIcon_96.png">AppIcon_96.png</asset>
+    <asset path="AppIcon_90.png">AppIcon_90.png</asset>
+    <asset path="AppIcon_86.png">AppIcon_86.png</asset>
+    <asset path="assets">assets</asset>
+    
     <!-- Request permission to execute native code.  Required for native applications. -->
     <permission system="true">run_native</permission>
     <env var="LD_LIBRARY_PATH" value="app/native/lib:/usr/lib/qt4/lib"/>
